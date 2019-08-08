@@ -37,9 +37,7 @@ int main()
     CfgFsys( );                                                           //CH559时钟选择配置
     mDelaymS(5);                                                          //修改主频等待内部晶振稳定,必加
     mInitSTDIO( );                                                        //串口0初始化
-//#ifdef DE_PRINTF
-//    printf("start ...\n");
-//#endif
+
     for(i=0; i<64; i++)                                                   //准备演示数据
     {
         UserEp2Buf[i] = 0;
